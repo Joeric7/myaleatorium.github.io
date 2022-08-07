@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./resources/images/PNG_transparency_demonstration_1.png">
+    <title>Aleatorium</title>
+</head>
+
+<body>
+    <header id="keytumama">
+        <h1>Aleatorium</h1>
+       
+    </header>
+    <div id="hidden-div" class="quotes">
+        <h2 class="fade">Y el ganador es...</h2>
+        <div class="keyboard-img">
+            <img src="./resources/images/keyboard.png" alt=""><h3 id="ganador"></h3>
+        </div>
+        </div>
+    </div>
+    <main>
+        <form class="form">
+            <div class="align">
+                <input type="text" class="p-box" id="participant-box" name="participant" placeholder="Escribe aqui">
+                <input type="number" id="participants-counter" name="participants-counter" min="2" max="10" value="2">
+            </div>
+            <div class="participants-logger" id="logger">
+        
+            </div>
+            <div class="align">
+                <input type="button" id="button" name="participant-button" value="Agregar Participante">
+                <input type="button" id="hidden" name="hidden-button" value="Sortear!">
+            </div>
+        </form>
+
+   
+    </main>
+</body>
+
+<script src="./scripts/script.js"></script>
+
+</html>

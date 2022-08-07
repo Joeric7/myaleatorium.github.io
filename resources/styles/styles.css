@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#participants-counter {
+    max-width: 45px;
+}
+
+.participants-logger {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px 0;
+    padding: 10px;
+    min-width: 300px;
+    max-width: 400px;
+    min-height: 200px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+span {
+    box-shadow: 2px 2px 1px gray;
+    padding: 7px;
+    height: fit-content;
+    margin: 10px 5px 3px 5px;
+    color: white;
+    background-color: maroon;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: default;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.p-box {
+    padding: 2px;
+    border: 1px solid black;
+}
+
+.red {
+    padding: 2px;
+    color: maroon;
+    border: 1px solid red;
+}
+
+.red:focus {
+    outline: none;
+}
+
+.form {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.align {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input[type="button"] {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.keyboard-img {
+    display: none;
+    bottom: 20px;
+    position: fixed;
+    margin-top: 30px;
+    width: 400px;
+    height: 200px;
+    animation: opacity 3s;
+    -webkit-animation: opacity 3s;
+}
+
+body:hover .keyboard-img{
+    display: flex;
+    justify-content: center;
+}
+
+.keyboard-img {
+    z-index: 100;
+}
+
+.keyboard-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 2s, scale 1s ease-out 1.6s, opacity 1s;
+    -webkit-transition: transform 2s, scale 1s ease-out 1.6s, opacity 1s;
+    -moz-transition: transform 2s, scale 1s ease-out 1.6s, opacity 1s;
+    -ms-transition: transform 2s, scale 1s ease-out 1.6s, opacity 1s;
+    -o-transition: transform 2s, scale 1s ease-out 1.6s, opacity 1s;
+}
+
+
+
+input:disabled {
+    cursor: not-allowed;
+}
+
+
+
+.keyboard-img h3 {
+    top: 0;
+    position: absolute;
+    font-size: 7rem;
+    opacity: 0;
+    color: whitesmoke;
+    font-family: 'Dancing script', cursive;
+    text-align: center;
+    z-index: 100;
+    cursor: default;
+    transition: all 1s 3s;
+    -webkit-transition: all 1s 3s;
+    -moz-transition: all 1s 3s;
+    -ms-transition: all 1s 3s;
+    -o-transition: all 1s 3s;
+}
+
+.keyboard-img:hover h3 {
+    opacity: 1;
+    
+}
+
+
+.keyboard-img:hover img {
+    opacity: 1;
+    scale: 1.7;
+    transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -o-transform: translateY(-150px);
+}
+
+
+.quotes {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    background-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
